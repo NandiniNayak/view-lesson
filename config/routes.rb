@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 #  alternate syntax
   root "pages#home"
 
+  get "/contact", to:"pages#contact", as:"contact"
+
   get "/pages/:names", to:"pages#home", as:"data"
+
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

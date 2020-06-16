@@ -8,7 +8,12 @@ class PagesController < ApplicationController
         # by default from controller rails render view matching controller folder and method file
 
         # value for this variable ideally should be returned model
+        @user = "nands"
         puts params
         @names = params[:names]
+    end
+
+    def contact
+
     end
 end
